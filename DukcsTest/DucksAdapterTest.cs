@@ -16,7 +16,6 @@ namespace DukcsTest
         public void DuckAdapterIsDuck()
         {
             var d = new DuckAdapter(new AnAnimal("Ghepard"));
-
             Assert.IsTrue(d is global::Ducks.Ducks);
         }
 
@@ -24,7 +23,6 @@ namespace DukcsTest
         public void DuckAdapterReturnProperlyQuack()
         {
             var d = new DuckAdapter(new AnAnimal("Ghepard"));
-
             Assert.IsTrue(d.Display() == "Ghepard");
         }
     }
