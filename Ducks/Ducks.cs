@@ -2,12 +2,7 @@
 {
     public abstract class Ducks
     {
-        protected string _name;
-
-        public Ducks()
-        {
-            _name = "Duck";
-        }
+        protected abstract string _name { get; }
 
         public string Display() => _name;
 

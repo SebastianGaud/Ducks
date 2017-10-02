@@ -4,10 +4,7 @@ namespace Ducks
 {
     public class RedHeadDuck : Ducks, IFly, IQuackable
     {
-        public RedHeadDuck()
-        {
-            _name = "Redhead Duck";
-        }
+        protected override string _name => "Redhead Duck";
 
         public int Fly() => 50;
 
