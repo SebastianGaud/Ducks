@@ -1,4 +1,5 @@
 ﻿using Ducks;
+using Ducks.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DukcsTest
@@ -17,13 +18,17 @@ namespace DukcsTest
         [TestMethod]
         public void DuckCanNotFly()
         {
-
+            Assert.IsFalse(_rd is IFly, "La rubber duck sa volare");
         }
 
         [TestMethod]
         public void DuckSquackTest()
         {
-            Assert.IsTrue(_rd.Quack() == "Sqauck");
+            const string rightQuack = "Squack";
+            string quackToTest = _rd.Quack();
+            bool areEquals = rightQuack == quackToTest;
+
+            Assert.IsTrue(areEquals, "La papera non fa" + rightQuack);
         }
     }
 }
