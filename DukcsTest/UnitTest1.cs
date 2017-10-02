@@ -5,17 +5,6 @@ namespace DucksTest
     [TestClass]
     public class TestAllDucks
     {
-        [TestMethod]
-        public void TestDecoyDuck()
-        {
-            var d = new Ducks.DecoyDuck();
-
-            Assert.IsTrue(d.Display() == "Decoy Duck");
-
-            Assert.IsTrue(condition: d.Swim() == 0);
-
-
-        }
 
         [TestMethod]
         public void TestMallardDuck()
