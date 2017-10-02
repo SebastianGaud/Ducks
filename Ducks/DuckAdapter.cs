@@ -4,11 +4,11 @@ namespace Ducks
 {
     public class DuckAdapter : Ducks, IFly, IQuackable
     {
-        private Animal a;
+        private IAnimal a;
 
         protected override string _name => a.Call();
 
-        public DuckAdapter(Animal a)
+        public DuckAdapter(IAnimal a)
         {
             this.a = a;
         }

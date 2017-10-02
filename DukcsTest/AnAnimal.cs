@@ -2,7 +2,7 @@
 
 namespace DukcsTest
 {
-    public class AnAnimal : Animal
+    public class AnAnimal : IAnimal
     {
         private string _animalName;
 
@@ -15,12 +15,12 @@ namespace DukcsTest
         {
             return _animalName;
         }
-        int Animal.Fly()
+        int IAnimal.Fly()
         {
             return 50;
         }
 
-        int Animal.Swim()
+        int IAnimal.Swim()
         {
             return 100;
         }

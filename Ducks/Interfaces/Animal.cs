@@ -6,7 +6,7 @@
 #endregion
 namespace Ducks.Interfaces
 {
-    public interface Animal
+    public interface IAnimal
     {
         string Call();
 
