@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ducks.Interfaces;
+﻿using Ducks.Interfaces;
 
 namespace Ducks
 {
@@ -16,13 +11,13 @@ namespace Ducks
             this.a = a;
             _name = a.Call();
         }
-        
-        public override string Swim()
+
+        public override int Swim()
         {
             return a.Swim();
         }
 
-        public string Fly()
+        public int Fly()
         {
             return a.Fly();
         }

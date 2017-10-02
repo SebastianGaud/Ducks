@@ -10,8 +10,8 @@ namespace Ducks.Interfaces
     {
         string Call();
 
-        string Fly();
+        int Fly();
 
-        string Swim();
+        int Swim();
     }
 }

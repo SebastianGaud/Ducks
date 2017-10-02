@@ -1,13 +1,18 @@
-﻿namespace Ducks
+﻿using Ducks.Interfaces;
+
+namespace Ducks
 {
-    public class RubberDuck : Ducks
+    public class RubberDuck : Ducks, IQuackable
     {
         public RubberDuck()
         {
             _name = "Rubber Duck";
         }
-        public override string Swim() => "Ho nuotato per 5 metri";
+        public override int Swim() => 5;
 
-        public string Squack() => "Squack";
+        public string Quack()
+        {
+            return "Squack";
+        }
     }
 }

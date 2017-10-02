@@ -9,10 +9,10 @@ namespace Ducks
             _name = "Mallard";
         }
 
-        public string Fly() => "Ho volato per 20 metri";
+        public int Fly() => 20;
 
         public string Quack() => "Quack";
 
-        public override string Swim() => "Ho nuotato per 70 metri";
+        public override int Swim() => 70;
     }
 }

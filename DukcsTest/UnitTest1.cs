@@ -11,7 +11,10 @@ namespace DucksTest
             var d = new Ducks.DecoyDuck();
 
             Assert.IsTrue(d.Display() == "Decoy Duck");
-            Assert.IsTrue(d.Swim() == "Non so nuotare");
+
+            Assert.IsTrue(condition: d.Swim() == 0);
+
+
         }
 
         [TestMethod]
@@ -19,9 +22,11 @@ namespace DucksTest
         {
             var d = new Ducks.MallardDuck();
 
-            Assert.IsTrue(d.Display() == "Mallard");
+            Assert.IsTrue(d.Display() == "Mallard Duck");
             Assert.IsTrue(d.Quack() == "Quack");
-            Assert.IsTrue(d.Swim() == "Ho nuotato per 70 metri");
+
+            Assert.IsTrue(condition: d.Swim() == 70);
+            Assert.IsTrue(condition: d.Fly() == 20);
         }
 
         [TestMethod]
@@ -31,8 +36,9 @@ namespace DucksTest
 
             Assert.IsTrue(d.Display() == "Redhead Duck");
             Assert.IsTrue(d.Quack() == "Quack");
-            Assert.IsTrue(d.Swim() == "Ho nuotato per 1 Km");
-            Assert.IsTrue(d.Fly() == "Ho volato per: 50 metri");
+
+            Assert.IsTrue(condition: d.Swim() == 1000);
+            Assert.IsTrue(condition: d.Fly() == 50);
         }
 
 
@@ -42,8 +48,7 @@ namespace DucksTest
             var d = new Ducks.RubberDuck();
 
             Assert.IsTrue(d.Display() == "Rubber Duck");
-            Assert.IsTrue(d.Squack() == "Squack");
-            Assert.IsTrue(d.Swim() == "Ho nuotato per 5 metri");
+            Assert.IsTrue(d.Quack() == "Squack");
         }
     }
 }

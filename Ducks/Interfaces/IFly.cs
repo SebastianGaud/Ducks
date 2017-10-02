@@ -2,6 +2,6 @@
 {
     public interface IFly
     {
-        string Fly();
+        int Fly();
     }
 }

@@ -11,6 +11,6 @@
 
         public string Display() => _name;
 
-        public abstract string Swim();
+        public abstract int Swim();
     }
 }

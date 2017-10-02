@@ -7,6 +7,6 @@
             _name = "Decoy Duck";
         }
 
-        public override string Swim() => "Non so nuotare";
+        public override int Swim() => 0;
     }
 }
