@@ -45,7 +45,7 @@
     <Compile Include="DecoyDuck.cs" />
     <Compile Include="DuckAdapter.cs" />
     <Compile Include="Ducks.cs" />
-    <Compile Include="Interfaces\Animal.cs" />
+    <Compile Include="Interfaces\IAnimal.cs" />
     <Compile Include="Interfaces\IFly.cs" />
     <Compile Include="Interfaces\IQuackable.cs" />
     <Compile Include="MallardDuck.cs" />
