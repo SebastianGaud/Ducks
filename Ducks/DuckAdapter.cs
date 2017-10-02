@@ -6,10 +6,11 @@ namespace Ducks
     {
         private Animal a;
 
+        protected override string _name => a.Call();
+
         public DuckAdapter(Animal a)
         {
             this.a = a;
-            _name = a.Call();
         }
 
         public override int Swim()

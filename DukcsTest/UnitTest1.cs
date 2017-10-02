@@ -22,7 +22,7 @@ namespace DucksTest
         {
             var d = new Ducks.MallardDuck();
 
-            Assert.IsTrue(d.Display() == "Mallard Duck");
+            Assert.IsTrue(d.Display() == "Mallard");
             Assert.IsTrue(d.Quack() == "Quack");
 
             Assert.IsTrue(condition: d.Swim() == 70);
@@ -39,16 +39,6 @@ namespace DucksTest
 
             Assert.IsTrue(condition: d.Swim() == 1000);
             Assert.IsTrue(condition: d.Fly() == 50);
-        }
-
-
-        [TestMethod]
-        public void TestRubberDuck()
-        {
-            var d = new Ducks.RubberDuck();
-
-            Assert.IsTrue(d.Display() == "Rubber Duck");
-            Assert.IsTrue(d.Quack() == "Squack");
         }
     }
 }

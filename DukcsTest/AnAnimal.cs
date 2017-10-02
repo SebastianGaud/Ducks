@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ducks.Interfaces;
+﻿using Ducks.Interfaces;
 
 namespace DukcsTest
 {
@@ -20,15 +15,14 @@ namespace DukcsTest
         {
             return _animalName;
         }
-
-        public string Fly()
+        int Animal.Fly()
         {
-            return "I can't Fly";
+            return 50;
         }
 
-        public string Swim()
+        int Animal.Swim()
         {
-            return "I can Swim for 2 Miles";
+            return 100;
         }
     }
 }
